@@ -1,5 +1,9 @@
 name: "Download APK Action"
 description: "Downloads the latest Beatstar APK"
+inputs:
+  version:
+    description: The APK version
+    required: true
 runs:
   using: "node20"
   main: "index.js"
