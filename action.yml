@@ -4,6 +4,9 @@ inputs:
   version:
     description: The APK version
     required: true
+  data-url:
+    description: The data URL of the requested resource
+    required: true
 runs:
   using: "node20"
   main: "index.js"
