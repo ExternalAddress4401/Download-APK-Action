@@ -12,7 +12,7 @@ async function start() {
     .replace("{version}", core.getInput("version").replaceAll(".", "-"));
 
   const apkResponse = await axios.get(fetchUrl, { responseType: "stream" });
-  apkResponse.data.pipe(fs.createWriteStream("./apk/beatstar.apk"));
+  apkResponse.data.pipe(fs.createWriteStream("./beatstar.apk"));
 }
 
 start();
