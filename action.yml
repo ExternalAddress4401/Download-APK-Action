@@ -1,0 +1,5 @@
+name: "Download APK Action"
+description: "Downloads the latest Beatstar APK"
+runs:
+  using: "node20"
+  main: "index.js"
